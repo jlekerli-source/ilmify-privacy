@@ -8,7 +8,7 @@
     body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; margin: 0; background: #f7f5ef; color: #242722; }
     main { max-width: 760px; margin: 0 auto; padding: 48px 20px 72px; }
     article { background: white; border-radius: 20px; padding: clamp(24px, 5vw, 48px); box-shadow: 0 18px 48px rgba(62,48,20,.10); }
-    h1, h2 { line-height: 1.2; }
+    h1, h2, h3 { line-height: 1.2; }
     h1 { color: #235b46; }
     .updated { color: #667069; }
   </style>
@@ -17,11 +17,11 @@
 <main><article>
   <h1>Ilmify Privacy Policy</h1>
 
-  <p class="updated">Effective date: October 15, 2026</p>
+  <p class="updated">Effective date: October 20, 2026</p>
 
   <h2>Overview</h2>
 
-  <p>Ilmify is an Islamic learning app for iPhone and iPad with Prayer Studio, a Wudu guide, Arabic learning and speaking practice, Explore Islam lessons, a Qur’an reader and read-along, Dhikr &amp; Awrad, widgets and optional Support purchases. Learning works without an Ilmify account or a developer-operated cloud progress service.</p>
+  <p>Ilmify is an Islamic learning app for iPhone and iPad with Prayer Studio, a Wudu guide, Arabic learning and speaking practice, Explore Islam lessons, a Qur’an reader and read-along, Dhikr &amp; Awrad, widgets and optional Support purchases. Learning works without an Ilmify account or a developer-operated cloud progress service. An optional recitation donation, “Improve our system for everyone”, is off unless you turn it on; it is described in <a href="#donation">its own section</a>.</p>
 
   <section aria-labelledby="responsible">
   <h2 id="responsible">Who Is Responsible</h2>
@@ -59,11 +59,64 @@
 
   <h2>Qur’an Read-Along And Local Session Records</h2>
 
-  <p>Qur’an read-along processes microphone audio on your device with a recognition model supplied with the app, to follow your place in the text. Live audio and recognised text are used in memory during processing. The normal read-along feature does not save an audio recording or a raw transcript to disk, and does not send your recitation to the developer or a remote recognition service.</p>
+  <p>Qur’an read-along processes microphone audio on your device with a recognition model supplied with the app, to follow your place in the text. Live audio and recognised text are used in memory during processing. The normal read-along feature does not save an audio recording or a raw transcript to disk, and does not send your recitation to the developer or a remote recognition service, unless you turn on the optional recitation donation described in the next section.</p>
 
   <p>The app does retain local read-along session and diagnostic records. These can include a session identifier, dates and times, duration, the passage selected, surah, ayah and word positions, processing and stopping results, hashes of recognition output, model information, and technical audio-input, signal and route details. These records can indicate which passages you recited even though they contain no recording or raw transcript.</p>
 
   <p>These records stay in the app’s local storage and are not automatically sent to the developer. They have no automatic age-based expiry in the current app. Ilmify’s all-learning-data erase control includes these records and the saved session reference. Session and diagnostic records are not included in Ilmify learning-backup exports.</p>
+
+  <section aria-labelledby="donation">
+  <h2 id="donation">Improve Our System For Everyone (Optional Recitation Donation)</h2>
+
+  <p>“Improve our system for everyone” is an optional feature in Data &amp; Privacy, in Ilmify versions that offer it. It is off by default. Ilmify collects nothing through it unless you open it, confirm that you are 16 or older and agree on its consent screen. Not taking part changes nothing else in Ilmify.</p>
+
+  <h3>What is collected</h3>
+
+  <ul>
+    <li><strong>Audio:</strong> recordings of the Qur’an recitations you make with the microphone in read-along (including Memorize mode) after agreeing, as 16 kHz mono audio. Recordings shorter than two seconds are not kept, and at most ten minutes of each session is kept.</li>
+    <li><strong>Related details:</strong> the Qur’an ayah and page shown, the calendar day of the recording (not the time), its length, the app version, whether the app came from TestFlight or the App Store, the device type (iPhone or iPad), the major iOS version and the consent version.</li>
+    <li><strong>A random donor code:</strong> created for this purpose. It is not your name, Apple ID, email address, contacts or location. Apple’s CloudKit also attaches its own pseudonymous, app-specific user reference to each upload. Ilmify cannot see your Apple ID from it and does not keep it when downloading recordings.</li>
+  </ul>
+
+  <p>A voice recording is personal data, and donated recordings are grouped under your donor code. We therefore treat them as linked to you, and Ilmify’s App Store privacy details say so. We do not use them to identify who is speaking.</p>
+
+  <h3>How it is sent and stored</h3>
+
+  <p>Recordings are sent only over Wi-Fi or Ethernet, never over mobile data, Personal Hotspot or a Low Data Mode connection, and only while you are signed in to iCloud. They go to Ilmify’s storage in the public database of Apple’s CloudKit, which Apple operates as Ilmify’s hosting provider. Its access rules stop other users from reading them. Apple may process this data in other countries, including the United States.</p>
+
+  <p>A copy of each recording stays on your device until you delete it. These copies are kept in Ilmify’s private app storage with file protection, are excluded from device backups and are not included in Ilmify learning-backup exports. So that you can withdraw later, even after reinstalling the app, your donor code and a list of your uploads are also kept in your own private iCloud database, which Ilmify cannot read, and the donor code is kept in your device’s keychain, which iCloud Keychain syncs to your other devices if you use it. Both are deleted when you withdraw.</p>
+
+  <p>The app limits how much it collects: about 100 MB or 60 recordings a day, about 500 MB in total for each installation, and at most about 500 MB or 1,000 recordings kept on the device. When a limit is reached, the app stops keeping new recordings for donation and says so on the donation screen.</p>
+
+  <h3>How it is used</h3>
+
+  <p>Only to test and improve how Ilmify follows and checks recitation, for example how well it notices missed, wrong or extra words and vowel marks. This includes training and evaluating Ilmify’s own recognition models. Recordings are processed on computers controlled by Ilmify’s developer. They are not sold, not shared with other companies, not used for advertising or tracking, not sent to third-party AI or speech-recognition services, and not used to identify speakers.</p>
+
+  <h3>Legal basis</h3>
+
+  <p>Your consent (Art. 6(1)(a) GDPR). Because a Qur’an recitation can reveal religious belief, it is explicit consent to the processing of sensitive data (Art. 9(2)(a) GDPR; Art. 6(7) Swiss Federal Act on Data Protection). You can withdraw your consent at any time. Withdrawing does not affect processing that took place before.</p>
+
+  <h3>How long it is kept</h3>
+
+  <p>There is no fixed time limit. Recordings and their details are kept until you delete them or withdraw, or until Ilmify no longer needs them to test and improve its recitation features, whichever comes first. Then they are deleted from CloudKit and from Ilmify’s computers. Withdrawal notices (a donor code and recording names, no audio) are kept as long as Ilmify keeps any donated recordings, so that withdrawn recordings stay deleted, for example if an older copy is restored from a backup.</p>
+
+  <h3>Age</h3>
+
+  <p>Donating is only for people aged 16 or older. The consent screen asks you to confirm this, and nothing is sent without that confirmation. If we learn that someone younger donated, we delete those recordings. A parent or guardian can ask for this by email, with the donor code shown in the app.</p>
+
+  <h3>Pausing, deleting and withdrawing</h3>
+
+  <ul>
+    <li><strong>Pause:</strong> turn off donating on the donation screen. Nothing new is kept or sent until you turn it on again.</li>
+    <li><strong>Delete a single recording:</strong> it is deleted from your device at once. If it was already sent, its copy is deleted from CloudKit the next time the app can reach iCloud, and it is never sent again.</li>
+    <li><strong>“Withdraw and delete everything”:</strong> deletes all your donation recordings from your device at once and withdraws your consent. As soon as the device is online and signed in to iCloud, the app deletes your recordings from CloudKit and leaves a withdrawal notice for Ilmify. Recordings made before you withdraw are never sent afterwards.</li>
+    <li><strong>Erasing all learning data</strong> in Data &amp; Privacy also withdraws the donation in the same way.</li>
+    <li><strong>After deleting the app or on a new device:</strong> install Ilmify, sign in to the same iCloud account and tap “Withdraw earlier donations”.</li>
+    <li><strong>By email:</strong> write to <a href="mailto:Jason.omar.turkmani@gmail.com">Jason.omar.turkmani@gmail.com</a> with the donor code shown in the app after your first donation.</li>
+  </ul>
+
+  <p>Copies Ilmify has already downloaded are deleted at its next data update, within 30 days. This includes recordings sent from another iCloud account, which the app itself cannot delete. Models that were already trained are not retrained, but your recordings are left out of all further training and evaluation.</p>
+  </section>
 
   <h2>Learning Backups And Deletion</h2>
 
@@ -71,7 +124,7 @@
 
   <p>You choose where to save an exported file using the system file picker. A service you choose, such as iCloud Drive, may store or sync that file under its own terms. Ilmify does not automatically send backup files to the developer or operate its own cloud backup service.</p>
 
-  <p>The Data &amp; Privacy erase control removes supported learning records, completion totals, the Arabic recording cache and read-along session records. Presentation preferences are managed separately. Erasing data in Ilmify does not delete backup files you saved elsewhere; remove those copies through the file location or service you chose. We cannot retrieve learning data that is stored only on your device or in your own backup files.</p>
+  <p>The Data &amp; Privacy erase control removes supported learning records, completion totals, the Arabic recording cache, read-along session records and any recordings kept for the optional recitation donation, and it withdraws that donation as described above. Presentation preferences are managed separately. Erasing data in Ilmify does not delete backup files you saved elsewhere; remove those copies through the file location or service you chose. We cannot retrieve learning data that is stored only on your device or in your own backup files.</p>
 
   <h2>Reminders And Widgets</h2>
 
@@ -87,7 +140,7 @@
 
   <h2>Analytics, Feedback And TestFlight</h2>
 
-  <p>The current app does not use developer-operated analytics or advertising services and does not track users across other companies’ apps or websites. Local completion totals and read-along diagnostics are not automatically transmitted to the developer.</p>
+  <p>Apart from the optional recitation donation described above, the current app does not use developer-operated analytics or advertising services and does not track users across other companies’ apps or websites. Local completion totals and read-along diagnostics are not automatically transmitted to the developer.</p>
 
   <p>If you use a TestFlight beta, Apple automatically collects crash logs and usage information and shares information with the developer. Feedback you submit may include comments, screenshots, device information and your name or email, depending on how you joined the beta and what you submit.</p>
 
@@ -111,9 +164,9 @@
 
   <p>For privacy questions, requests or feedback, email <a href="mailto:Jason.omar.turkmani@gmail.com">Jason.omar.turkmani@gmail.com</a>.</p>
 
-  <p>Depending on applicable law, you may request access, correction, deletion, or restriction of personal information we hold, or object to its processing. Contact the email above to make a request. We may need information to verify that the request is yours. Requests about data held by Apple can also be made through <a href="https://privacy.apple.com/">Apple's Data and Privacy service</a>.</p>
+  <p>Depending on applicable law, you may request access, correction, deletion, or restriction of personal information we hold, object to its processing, receive data you provided in a portable format, and withdraw consent at any time. You can also complain to a data protection authority; in Switzerland this is the Federal Data Protection and Information Commissioner (FDPIC), and in the EU the authority in your country. Contact the email above to make a request. We may need information to verify that the request is yours. Requests about data held by Apple can also be made through <a href="https://privacy.apple.com/">Apple's Data and Privacy service</a>.</p>
 
-  <p>Parents or guardians should supervise children's use of beta software and optional purchases. We do not knowingly solicit children's personal information through Ilmify. If you believe a child has sent personal information to us, contact us so we can address it.</p>
+  <p>Parents or guardians should supervise children's use of beta software and optional purchases. We do not knowingly solicit children's personal information through Ilmify. The optional recitation donation is only for people aged 16 or older. If you believe a child has sent personal information to us, contact us so we can address it.</p>
 
   <h2>Changes</h2>
 
